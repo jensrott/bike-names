@@ -6,7 +6,7 @@ Micro library that returns names of famous bike brands
 [![License](https://img.shields.io/npm/l/bike-names.svg?style=flat-square)](https://www.npmjs.com/package/bike-names)
 [![npm downloads](https://img.shields.io/npm/dt/bike-names.svg?style=flat-square)](https://www.npmjs.com/package/bike-names)
 [![travis build](https://img.shields.io/travis/jensrott/bike-names.svg?style=flat-square)](https://travis-ci.com/jensrott/bike-names)
-[![codecov coverage](https://img.shields.io/codecov/c/github/jensrott/bike-names.svg?style=flat-square)](https://codecov.io/github/jensrott/bike-names)
+[![coverals coverage](http://img.shields.io/coveralls/jensrott/bike-names.svg?style=flat)](https://coveralls.io/r/jensrott/bike-names)
 
 &nbsp;
 &nbsp;
