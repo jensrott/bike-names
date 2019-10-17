@@ -8,9 +8,6 @@ Micro library that returns names of famous bike brands
 [![travis build](https://img.shields.io/travis/jensrott/bike-names.svg?style=flat-square)](https://travis-ci.com/jensrott/bike-names)
 [![coverals coverage](http://img.shields.io/coveralls/jensrott/bike-names.svg?style=flat)](https://coveralls.io/r/jensrott/bike-names)
 
-&nbsp;
-&nbsp;
-
 # Install
 
 This package is distributed via npm:
@@ -19,9 +16,6 @@ This package is distributed via npm:
 $ npm install bike-names
 ```
 
-&nbsp;
-&nbsp;
-
 # Usage
 
 ```javascript
@@ -29,9 +23,6 @@ const names = require('bike-names');
 const allNames = names.all;
 const randomName = names.random();
 ```
-
-&nbsp;
-&nbsp;
 
 # License
 
