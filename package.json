@@ -1,0 +1,46 @@
+{
+  "name": "bike-names",
+  "version": "1.0.3",
+  "description": "Get random bike names",
+  "main": "lib/index.js",
+  "scripts": {
+    "test-mocha": "mocha src/index.test.js -w",
+    "build:commonjs": "babel src --out-dir lib --copy-files",
+    "build:umd": "cross-env FILE_NAME=bike-names webpack",
+    "build:umd:min": "cross-env NODE_ENV=production npm run build:umd",
+    "build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min",
+    "clean": "rimraf lib dist",
+    "lint": "eslint src --ext .js",
+    "test": "jest",
+    "coverage": "npm test -- --coverage",
+    "posttest": "npm run lint",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "author": "Jens Rottiers",
+  "license": "MIT",
+  "keywords": [
+    "random",
+    "bike",
+    "names"
+  ],
+  "dependencies": {
+    "unique-random-array": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "coveralls": "^3.0.7",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
+}

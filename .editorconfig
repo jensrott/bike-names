@@ -1,0 +1,15 @@
+# Only uses this .editorconfig file
+root = true
+
+# General settings for whole project
+[*]
+indent_style = space
+end_of_line = lf
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+
+# Format specific overrides (markdown)
+[*.md]
+max_line_length = 0
+trim_trailing_whitespace = false
